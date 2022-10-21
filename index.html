@@ -1,69 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
-</head>
-<body>
-  <header class="header">
-    <div class="logo_container">
-      <img src="./images/spotify_logo.jpg" alt="spotify-logo" class="spotify-logo">
-      <h2>Spotify</h2>
-    </div>
-    <div class="links_header_container">
-      <a href="#" class="link_header">Premium</a>
-      <a href="#" class="link_header">Suporte</a>
-      <a href="#" class="link_header">Baixar</a>
-      <div class="perfil_container">
-        <img src="./images/user_logo.png" alt="user_logo" class="user_logo">
-        <a href="#" class="link_header">Perfil</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo_container">
+        <img
+          src="./images/spotify_logo.jpg"
+          alt="spotify-logo"
+          class="spotify-logo"
+        />
+        <h2>Spotify</h2>
       </div>
-    </div>
-  </header>
-
-  <section class="enjoy_section">
-    <h1>Curtição sem limites</h1>
-    <p>Escolha entre milhões de músicas e curta quando quiser, sem anúncios e offline.</p>
-    <div class="enjoy_buttons">
-      <button class="start_now">COMECE AGORA</button>
-      <button class="show_plan">VER PLANOS</button>
-    </div>
-    <a href="" class="terms">Sujeito a termos e condições</a>
-  </section>
-
-  <section class="why_premium_section">
-    <h1>Por que ser Premium?</h1>
-    <div class="circle_images_container">
-
-      <div class="offline_mode_container">
-        <img src="./images/offline_mode.png" alt="offline_mode_logo">
-        <p class="image_title">Modo offline</p>
-        <p class="image_discrpition">Ouça música onde estiver.</p>
+      <div class="links_header_container">
+        <a href="#" class="link_header">Premium</a>
+        <a href="#" class="link_header">Suporte</a>
+        <a href="#" class="link_header">Baixar</a>
+        <div class="perfil_container">
+          <img src="./images/user_logo.png" alt="user_logo" class="user_logo" />
+          <a href="#" class="link_header">Perfil</a>
+        </div>
       </div>
+    </header>
 
-      <div class="no_ad_container">
-        <img src="./images/no_ad.png" alt="no_ad_logo">
-        <p class="image_title">Ouça músicas sem anúncios.</p>
-        <p class="image_discrpition">Curta música sem parar.</p>
+    <section class="enjoy_section">
+      <h1>Curtição sem limites</h1>
+      <p>
+        Escolha entre milhões de músicas e curta quando quiser, sem anúncios e
+        offline.
+      </p>
+      <div class="enjoy_buttons">
+        <button class="start_now">COMECE AGORA</button>
+        <button class="show_plan">VER PLANOS</button>
       </div>
+      <a href="" class="terms">Sujeito a termos e condições</a>
+    </section>
 
-      <div class="listen_everywhere_container">
-        <img src="./images/listen_everywhere.png" alt="listen_everywhere_logo">
-        <p class="image_title">Ouça o que quiser.</p>
-        <p class="image_discrpition">Mesmo no celular ou tablet.</p>
-      </div>
+    <section class="why_premium_section">
+      <h1>Por que ser Premium?</h1>
+      <div class="circle_images_container">
+        <div class="offline_mode_container mini_card">
+          <img
+            src="./images/offline_mode.png"
+            alt="offline_mode_logo"
+            class="circular_image"
+          />
+          <p class="image_title">Modo offline</p>
+          <p class="image_discrpition">Ouça música onde estiver.</p>
+        </div>
 
-      <div class="play_anytime_container">
-        <img src="./images/play_anytime.png" alt="">
-        <p class="image_title">Troque de música o quanto quiser</p>
-        <p class="image_discrpition">Pule quando quiser.</p>
+        <div class="no_ad_container mini_card">
+          <img
+            src="./images/no_ad.png"
+            alt="no_ad_logo"
+            class="circular_image"
+          />
+          <p class="image_title">Ouça músicas sem anúncios.</p>
+          <p class="image_discrpition">Curta música sem parar.</p>
+        </div>
+
+        <div class="listen_everywhere_container mini_card">
+          <img
+            src="./images/listen_everywhere.png"
+            alt="listen_everywhere_logo"
+            class="circular_image"
+          />
+          <p class="image_title">Ouça o que quiser.</p>
+          <p class="image_discrpition">Mesmo no celular ou tablet.</p>
+        </div>
+
+        <div class="play_anytime_container mini_card">
+          <img src="./images/play_anytime.png" alt="" class="circular_image" />
+          <p class="image_title">Troque de música o quanto quiser</p>
+          <p class="image_discrpition">Pule quando quiser.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="plan_section""></section>
-  <footer class="footer"></footer>
-</body>
+    </section>
+
+    <section class="plan_section">
+      <h1 class="title">Escolha seu plano Premium</h1>
+      <p class="credit_description">
+        Ouça sem limites no seu celular, alto-falante e em outros dispositivos.
+      </p>
+
+      <div class="credit_plans">
+        <div class="plan_card">
+          <div class="card_header">
+            <div class="free_month">
+              <p>Faça uma assinatura e tenha 2 meses grátis</p>
+            </div>
+            <h2>Individual</h2>
+            <p>R$ 19,90/mês após o período da oferta</p>
+            <p>1 conta</p>
+          </div>
+          <div class="benefits_container">
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça músicas sem anúncio</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça em qualquer lugar — até no modo offline</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Escolha a música que quer ouvir</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Faça um plano pré-pago ou uma assinatura</p>
+            </div>
+          </div>
+          <div class="card_footer">
+            <button class="card_button">Começar</button>
+            <p>
+              <a href="#">Sujeito a Termos e Condições.</a> Os 2 meses grátis
+              não estão disponíveis para usuários que já experimentaram o
+              Premium. A oferta termina em 03/11/2022.
+            </p>
+          </div>
+        </div>
+
+        <div class="plan_card">
+          <div class="card_header">
+            <div class="free_month">
+              <p>1 mês grátis ao assinar</p>
+            </div>
+            <div class="unic_payment">
+              <p>Pagamento único disponivel</p>
+            </div>
+            <h2>Duo</h2>
+            <p>R$ 24,90/mês após o período da oferta</p>
+            <p>2 contas</p>
+          </div>
+          <div class="benefits_container">
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>2 contas Premium para um casal que mora junto</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça sem anúncios, no modo offline e sob demanda</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Faça um plano pré-pago ou uma assinatura</p>
+            </div>
+          </div>
+          <div class="card_footer">
+            <button class="card_button">Começar</button>
+            <p>
+              <a href="#">Sujeito a Termos e Condições.</a> Os 2 meses grátis
+              não estão disponíveis para usuários que já experimentaram o
+              Premium. A oferta termina em 03/11/2022.
+            </p>
+          </div>
+        </div>
+
+        <div class="plan_card">
+          <div class="card_header">
+            <div class="free_month">
+              <p>1 meses grátis ao assinar</p>
+            </div>
+            <div class="unic_payment">
+              <p>Pagamento único disponivel</p>
+            </div>
+            <h2>Familia</h2>
+            <p>R$ 34,90/mês após o período da oferta</p>
+            <p>6 contas</p>
+          </div>
+          <div class="benefits_container">
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>
+                6 contas Premium para familiares que moram no mesmo endereço
+              </p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Bloqueie músicas com conteúdo explícito</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça sem anúncios, no modo offline e sob demanda</p>
+            </div>
+
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>
+                Spotify Kids: um aplicativo separado, feito especialmente para
+                crianças
+              </p>
+            </div>
+
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Faça um plano pré-pago ou uma assinatura</p>
+            </div>
+          </div>
+          <div class="card_footer">
+            <button class="card_button">Começar</button>
+            <p>
+              <a href="#">Sujeito a Termos e Condições.</a> Os 2 meses grátis
+              não estão disponíveis para usuários que já experimentaram o
+              Premium. A oferta termina em 03/11/2022.
+            </p>
+          </div>
+        </div>
+
+        <div class="plan_card">
+          <div class="card_header">
+            <div class="free_month">
+              <p>1 mês grátis ao assinar</p>
+            </div>
+            <h2>Universitário</h2>
+            <p>R$ 9,90/mês após o período da oferta</p>
+            <p>1 conta</p>
+          </div>
+          <div class="benefits_container">
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>
+                Desconto especial para estudantes universitários que tenham
+                direito à oferta
+              </p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça músicas sem anúncios</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Ouça em qualquer lugar — até no modo offline</p>
+            </div>
+            <div class="benefit">
+              <img
+                src="./images/iconmonstr-check-mark-1.svg"
+                alt="check_mark"
+                class="check_mark"
+              />
+              <p>Escolha a música que quer ouvir</p>
+            </div>
+          </div>
+          <div class="card_footer">
+            <button class="card_button">Começar</button>
+            <p>
+              Oferta disponível somente para estudantes de instituições de
+              ensino superior credenciadas. O mês grátis não está disponível
+              para usuários que já experimentaram o Premium.
+              <a href="#">Sujeito a Termos e Condições.</a> Os 2 meses grátis
+              não estão disponíveis para usuários que já experimentaram o
+              Premium. A oferta termina em 03/11/2022.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer"></footer>
+  </body>
 </html>
